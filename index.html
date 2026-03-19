@@ -1,0 +1,1099 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>ITC Beauty Training</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/course.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg premium-navbar fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">
+          <img src="./images/LogoITC.png" alt="ITC Beauty" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="./index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About</a>
+            </li>
+
+            <!-- COURSES DROPDOWN -->
+            <li class="nav-item dropdown course-dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                Courses
+              </a>
+
+              <div class="dropdown-menu course-menu">
+                <a class="dropdown-item" href="./courses/facial-beauty.html">
+                  <i class="fa-solid fa-spa"></i>
+                  Facial & Beauty Therapy
+                </a>
+
+                <a
+                  class="dropdown-item"
+                  href="./courses//hair-styling-bridal-hair.html"
+                >
+                  <i class="fa-solid fa-scissors"></i>
+                  Hair Styling & Bridal Hair Artistry
+                </a>
+
+                <a class="dropdown-item" href="./courses/nail-art-design.html">
+                  <i class="fa-solid fa-wand-magic-sparkles"></i>
+                  Nail Art Design & Extension
+                </a>
+
+                <a class="dropdown-item" href="./courses/body-therapy-spa.html">
+                  <i class="fa-solid fa-palette"></i>
+                  Body Therapy & Spa Treatment
+                </a>
+
+                <a
+                  class="dropdown-item"
+                  href="./courses/professional-makeup.html"
+                >
+                  <i class="fa-solid fa-flask"></i>
+                  Professional Makeup & Beauty Artistry
+                </a>
+
+                <a
+                  class="dropdown-item"
+                  href="./courses/personalized-grooming.html"
+                >
+                  <i class="fa-solid fa-hand-sparkles"></i>
+                  Personalized Grooming
+                </a>
+
+                <a
+                  class="dropdown-item"
+                  href="./courses/beauty-device-technology.html"
+                >
+                  <i class="fa-solid fa-eye"></i>
+                  Beauty Devices Technology
+                </a>
+
+                <a
+                  class="dropdown-item"
+                  href="./courses/integrated-courses.html"
+                >
+                  <i class="fa-solid fa-user-doctor"></i>
+                  Integrated Courses
+                </a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./branches.html">Branches</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+            <li class="nav-item ms-lg-3 d-flex align-items-center">
+              <button id="themeToggle" class="theme-icon-btn">
+                <i class="fa-solid fa-moon" id="themeIcon"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+
+    <section class="hero">
+      <div class="swiper heroSwiper">
+        <div class="swiper-pagination"></div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide hero1"></div>
+          <div class="swiper-slide hero2"></div>
+          <div class="swiper-slide hero3"></div>
+        </div>
+      </div>
+
+      <div class="hero-content">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-7">
+              <h1>Transforming Dreams, Enhancing Beauty</h1>
+
+              <p>Get certified in top beauty courses.</p>
+
+              <ul class="hero-points">
+                <li>100% Placement Assistance</li>
+                <li>0% Interest Loan Facility</li>
+                <li>1,00,000+ Students</li>
+              </ul>
+            </div>
+
+            <div class="col-lg-5">
+              <div class="form-card">
+                <h4>Register For Free</h4>
+
+                <form>
+                  <input class="form-control mb-2" placeholder="First Name" />
+                  <input class="form-control mb-2" placeholder="Last Name" />
+                  <input
+                    class="form-control mb-2"
+                    placeholder="Mobile Number"
+                  />
+
+                  <select class="form-control mb-3">
+                    <option>Select Course</option>
+                    <option>Advanced Beautician Diploma</option>
+                    <option>Russian Hairstyle</option>
+                    <option>Hair Chemical Treatment</option>
+                    <option>Master Makeup</option>
+                    <option>Skin Chemical Treatment</option>
+                    <option>Nail Technician</option>
+                    <option>Overseas Program</option>
+                    <option>Eyelash Extensions</option>
+                    <option>Cosmetology</option>
+                    <option>Mehendi Specialization</option>
+                    <option>Master Makeup</option>
+                  </select>
+
+                  <button class="btn btn-primary w-100">Submit Form</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-section p-5 reveal" style="margin-top: 4em">
+      <div class="container">
+        <div class="row text-center g-4">
+          <div class="col-md-3">
+            <h3 class="stat-number" data-target="26">0</h3>
+            <p>Years of Experience</p>
+          </div>
+
+          <div class="col-md-3">
+            <h3 class="stat-number" data-target="17000">0</h3>
+            <p>Graduates</p>
+          </div>
+
+          <div class="col-md-3">
+            <h3 class="stat-number" data-target="14">0</h3>
+            <p>Branches</p>
+          </div>
+
+          <div class="col-md-3">
+            <h3 class="stat-number" data-target="1000">0</h3>
+            <p>Alumini Network</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COURSES -->
+    <section class="courses py-5">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <h2 class="section-title">Choose From The Top Beauty Courses</h2>
+          <p class="section-subtitle">
+            Professional certification programs designed to launch your beauty
+            career
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="course-card premium-hover">
+              <div class="course-img">
+                <img
+                  src="https://itcbeautytraining.com/wp-content/uploads/2024/04/1-2.jpg"
+                  alt="Facial & Beauty Therapy"
+                />
+              </div>
+              <div class="course-icon"><i class="fa-solid fa-spa"></i></div>
+              <h5>Facial & Beauty Therapy</h5>
+              <p>
+                Comprehensive training in facials, skincare, and beauty
+                treatments.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="course-card premium-hover">
+              <div class="course-img">
+                <img
+                  src="https://itcbeautytraining.com/wp-content/uploads/2024/04/1-1.jpg"
+                  alt="Hair Styling & Bridal Hair Artistry"
+                />
+              </div>
+              <div class="course-icon">
+                <i class="fa-solid fa-scissors"></i>
+              </div>
+              <h5>Hair Styling & Bridal Hair Artistry</h5>
+              <p>
+                Master advanced hairstyling and elegant bridal updo techniques.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="course-card premium-hover">
+              <div class="course-img">
+                <img
+                  src="https://itcbeautytraining.com/wp-content/uploads/2024/04/5-1.jpg"
+                  alt="Nail Art Design & Extension"
+                />
+              </div>
+              <div class="course-icon">
+                <i class="fa-solid fa-hand-sparkles"></i>
+              </div>
+              <h5>Nail Art Design & Extension</h5>
+              <p>
+                Creative nail art, gel/acrylic extensions, and professional
+                techniques.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="course-card premium-hover">
+              <div class="course-img">
+                <img
+                  src="https://itcbeautytraining.com/wp-content/uploads/2024/04/3-2.jpg"
+                  alt="Body Therapy & Spa Treatment"
+                />
+              </div>
+              <div class="course-icon"><i class="fa-solid fa-palette"></i></div>
+              <h5>Body Therapy & Spa Treatment</h5>
+              <p>
+                Relaxing body massages, scrubs, wraps, and full spa therapies.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="course-card premium-hover">
+              <div class="course-img">
+                <img
+                  src="https://itcbeautytraining.com/wp-content/uploads/2024/04/7-1.jpg"
+                  alt="Professional Makeup & Beauty Artistry"
+                />
+              </div>
+              <div class="course-icon"><i class="fa-solid fa-flask"></i></div>
+              <h5>Professional Makeup & Beauty Artistry</h5>
+              <p>
+                Bridal, fashion, editorial makeup, and advanced artistry skills.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="course-card premium-hover">
+              <div class="course-img">
+                <img
+                  src="https://itcbeautytraining.com/wp-content/uploads/2024/04/3-1.jpg"
+                  alt="Personalized Grooming"
+                />
+              </div>
+              <div class="course-icon">
+                <i class="fa-solid fa-user-doctor"></i>
+              </div>
+              <h5>Personalized Grooming</h5>
+              <p>
+                Tailored grooming solutions for men and women, including
+                skincare & styling.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="course-card premium-hover">
+              <div class="course-img">
+                <img
+                  src="https://itcbeautytraining.com/wp-content/uploads/2024/04/4-1.jpg"
+                  alt="Beauty Devices Technology"
+                />
+              </div>
+              <div class="course-icon"><i class="fa-solid fa-eye"></i></div>
+              <h5>Beauty Devices Technology</h5>
+              <p>
+                Training on modern beauty tools, RF, LED, microcurrent & more.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="course-card premium-hover">
+              <div class="course-img">
+                <img
+                  src="https://itcbeautytraining.com/wp-content/uploads/2024/04/6-1.jpg"
+                  alt="Integrated Courses"
+                />
+              </div>
+              <div class="course-icon"><i class="fa-solid fa-leaf"></i></div>
+              <h5>Integrated Courses</h5>
+              <p>
+                Combined comprehensive programs covering multiple beauty
+                disciplines.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIRECTOR MESSAGE -->
+
+    <section class="director">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <!-- DIRECTOR IMAGE -->
+
+          <div class="col-lg-5">
+            <div class="director-img-wrapper">
+              <img
+                src="https://orane.com/wp-content/uploads/2023/10/new-768x763.png"
+                class="director-img"
+                alt="Director"
+              />
+            </div>
+          </div>
+
+          <!-- MESSAGE -->
+
+          <div class="col-lg-7">
+            <div class="director-content">
+              <span class="director-tag">Message from Director</span>
+
+              <h2 class="director-title">Unveiling Our Vision</h2>
+
+              <p class="director-text">
+                We take pride in offering a comprehensive and enriching learning
+                experience.
+              </p>
+
+              <p class="director-text">
+                As the founder of ITC Beauty Parlor Training Center, I am
+                delighted to welcome you to our vibrant and dynamic community of
+                beauty enthusiasts and professionals.
+              </p>
+
+              <a href="./about.html" class="director-btn"> Know More </a>
+
+              <!-- SIGNATURE -->
+
+              <div class="director-signature">
+                <img
+                  src="https://itcbeautytraining.com/wp-content/uploads/2024/01/Shobha-12.jpg"
+                  class="director-avatar"
+                  alt="Founder"
+                />
+
+                <div>
+                  <h6 class="director-name">Shobha Aryal</h6>
+
+                  <span class="director-role"> Founder </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+
+    <section class="gallery">
+      <div class="container">
+        <h2 class="text-center section-title">Our Student's Work</h2>
+
+        <p class="text-center section-subtitle">
+          Explore the beautiful work created by our talented students during
+          training.
+        </p>
+
+        <div class="row g-4 gallery-grid">
+          <div class="col-lg-3 col-md-6">
+            <div class="gallery-item">
+              <img
+                src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSTDrdm-TisRPyS3Bmx4JWbS6GaayTQj9BskAw2qrqnF1qy2Z-q"
+                class="gallery-img"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="gallery-item">
+              <img
+                src="https://makeup.buynsofts.in/wp-content/uploads/2022/03/riya7-819x1024.jpg"
+                class="gallery-img"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="gallery-item">
+              <img
+                src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS4beKA-Kwf-BnohSN-vU_qFYrVq0cjVttMXm_TdOkhjrmDNbXZ"
+                class="gallery-img"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="gallery-item">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMe2PdNAQeKMKYDgazpgTH0lvp_DbTABG8ZQ&s"
+                class="gallery-img"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-section py-5">
+      <div class="container">
+        <div class="swiper gallerySwiper">
+          <div class="swiper-wrapper">
+            <!-- SLIDE 1 -->
+            <div class="swiper-slide">
+              <div class="gallery-card">
+                <img
+                  src="https://itcbeautytraining.com/wp-content/uploads/2024/02/Manisha-Sapkota--e1707386957303.jpeg"
+                />
+                <div class="gallery-overlay">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- SLIDE 2 -->
+            <div class="swiper-slide">
+              <div class="gallery-card">
+                <img
+                  src="https://itcbeautytraining.com/wp-content/uploads/2024/04/12-3.jpg"
+                />
+                <div class="gallery-overlay">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- SLIDE 3 -->
+            <div class="swiper-slide">
+              <div class="gallery-card">
+                <img
+                  src="https://itcbeautytraining.com/wp-content/uploads/2024/04/21.jpg"
+                />
+                <div class="gallery-overlay">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- SLIDE 4 -->
+            <div class="swiper-slide">
+              <div class="gallery-card">
+                <img
+                  src="https://itcbeautytraining.com/wp-content/uploads/2024/04/9-1.jpg"
+                />
+                <div class="gallery-overlay">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- SLIDE 5 -->
+            <div class="swiper-slide">
+              <div class="gallery-card">
+                <img
+                  src="https://itcbeautytraining.com/wp-content/uploads/2024/04/3-3.jpg"
+                />
+                <div class="gallery-overlay">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- SLIDE 6 -->
+            <div class="swiper-slide">
+              <div class="gallery-card">
+                <img
+                  src="https://itcbeautytraining.com/wp-content/uploads/2024/04/15-2.jpg"
+                />
+                <div class="gallery-overlay">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- SLIDE 7 -->
+            <div class="swiper-slide">
+              <div class="gallery-card">
+                <img
+                  src="https://itcbeautytraining.com/wp-content/uploads/2024/04/25.jpg"
+                />
+                <div class="gallery-overlay">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- SLIDE 8 -->
+            <div class="swiper-slide">
+              <div class="gallery-card">
+                <img
+                  src="https://itcbeautytraining.com/wp-content/uploads/2024/04/13-3.jpg"
+                />
+                <div class="gallery-overlay">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- SLIDE 9 -->
+            <div class="swiper-slide">
+              <div class="gallery-card">
+                <img
+                  src="http://itcbeautytraining.com/wp-content/uploads/2024/04/1.jpg"
+                />
+                <div class="gallery-overlay">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- SLIDE 10 -->
+            <div class="swiper-slide">
+              <div class="gallery-card">
+                <img
+                  src="http://itcbeautytraining.com/wp-content/uploads/2024/04/3-4.jpg"
+                />
+                <div class="gallery-overlay">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- SLIDE 11 -->
+            <div class="swiper-slide">
+              <div class="gallery-card">
+                <img
+                  src="http://itcbeautytraining.com/wp-content/uploads/2024/04/2-5.jpg"
+                />
+                <div class="gallery-overlay">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- SLIDE 12 -->
+            <div class="swiper-slide">
+              <div class="gallery-card">
+                <img
+                  src="http://itcbeautytraining.com/wp-content/uploads/2024/04/22.jpg"
+                />
+                <div class="gallery-overlay">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- SLIDE 13 -->
+            <div class="swiper-slide">
+              <div class="gallery-card">
+                <img
+                  src="http://itcbeautytraining.com/wp-content/uploads/2024/04/14-1.jpg"
+                />
+                <div class="gallery-overlay">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- SLIDE 14 -->
+            <div class="swiper-slide">
+              <div class="gallery-card">
+                <img
+                  src="http://itcbeautytraining.com/wp-content/uploads/2024/04/23.jpg"
+                />
+                <div class="gallery-overlay">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- SLIDE 15 -->
+            <div class="swiper-slide">
+              <div class="gallery-card">
+                <img
+                  src="http://itcbeautytraining.com/wp-content/uploads/2024/04/19.jpg"
+                />
+                <div class="gallery-overlay">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- SLIDE 16 -->
+            <div class="swiper-slide">
+              <div class="gallery-card">
+                <img
+                  src="http://itcbeautytraining.com/wp-content/uploads/2024/04/1-4.jpg"
+                />
+                <div class="gallery-overlay">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- SLIDE 17 -->
+            <div class="swiper-slide">
+              <div class="gallery-card">
+                <img
+                  src="http://itcbeautytraining.com/wp-content/uploads/2024/04/30.jpg"
+                />
+                <div class="gallery-overlay">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- SLIDE 18 -->
+            <div class="swiper-slide">
+              <div class="gallery-card">
+                <img
+                  src="http://itcbeautytraining.com/wp-content/uploads/2024/04/18.jpg"
+                />
+                <div class="gallery-overlay">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- SLIDE 19 -->
+            <div class="swiper-slide">
+              <div class="gallery-card">
+                <img
+                  src="http://itcbeautytraining.com/wp-content/uploads/2024/04/28.jpg"
+                />
+                <div class="gallery-overlay">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- SLIDE 20 -->
+            <div class="swiper-slide">
+              <div class="gallery-card">
+                <img
+                  src="http://itcbeautytraining.com/wp-content/uploads/2024/04/26.jpg"
+                />
+                <div class="gallery-overlay">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation buttons -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+
+          <!-- Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIGHTBOX -->
+
+    <div class="gallery-lightbox" id="galleryLightbox">
+      <span class="lightbox-close">&times;</span>
+      <img class="lightbox-img" id="lightboxImg" />
+    </div>
+
+    <!-- WHY CHOOSE -->
+
+    <section class="why">
+      <div class="container">
+        <h2 class="text-center section-title">Why Choose ITC</h2>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="why-card">
+              <h5>Learn From Experts</h5>
+              <p>Experienced trainers guide every student.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="why-card">
+              <h5>Practice On Real Clients</h5>
+              <p>Hands-on practical experience.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="why-card">
+              <h5>Modern Classrooms</h5>
+              <p>Fully equipped learning environment.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+
+    <section class="testimonials">
+      <div class="container">
+        <h2 class="section-title text-center">What Our Students Say</h2>
+
+        <p class="section-subtitle text-center">
+          Hear from our students about their experience learning at ITC Beauty
+          Parlor Training Center.
+        </p>
+
+        <div class="swiper testimonialSwiper">
+          <div class="swiper-wrapper">
+            <!-- TESTIMONIAL 1 -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <p class="testimonial-text">
+                  The creative atmosphere at ITC Beauty Parlor Training Center
+                  fueled my passion for hair styling. The innovative techniques
+                  and exposure to industry trends opened doors to exciting
+                  opportunities. Couldn't have asked for a better place to learn
+                  and grow.
+                </p>
+
+                <div class="testimonial-user">
+                  <img
+                    src="https://itcbeautytraining.com/wp-content/uploads/2024/02/Manisha-Sapkota--e1707386957303.jpeg"
+                    class="testimonial-avatar"
+                    alt="Manisha Sapkota"
+                  />
+
+                  <div>
+                    <h6 class="testimonial-name">Manisha Sapkota</h6>
+
+                    <span class="testimonial-role">
+                      Hair Styling Enthusiast
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Duplicate for now (6 slides total) -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <p class="testimonial-text">
+                  The creative atmosphere at ITC Beauty Parlor Training Center
+                  fueled my passion for hair styling. The innovative techniques
+                  and exposure to industry trends opened doors to exciting
+                  opportunities. Couldn't have asked for a better place to learn
+                  and grow.
+                </p>
+                <div class="testimonial-user">
+                  <img
+                    src="https://itcbeautytraining.com/wp-content/uploads/2024/02/Manisha-Sapkota--e1707386957303.jpeg"
+                    class="testimonial-avatar"
+                  />
+                  <div>
+                    <h6 class="testimonial-name">Manisha Sapkota</h6>
+                    <span class="testimonial-role"
+                      >Hair Styling Enthusiast</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <p class="testimonial-text">
+                  The creative atmosphere at ITC Beauty Parlor Training Center
+                  fueled my passion for hair styling. The innovative techniques
+                  and exposure to industry trends opened doors to exciting
+                  opportunities. Couldn't have asked for a better place to learn
+                  and grow.
+                </p>
+                <div class="testimonial-user">
+                  <img
+                    src="https://itcbeautytraining.com/wp-content/uploads/2024/02/Manisha-Sapkota--e1707386957303.jpeg"
+                    class="testimonial-avatar"
+                  />
+                  <div>
+                    <h6 class="testimonial-name">Manisha Sapkota</h6>
+                    <span class="testimonial-role"
+                      >Hair Styling Enthusiast</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <p class="testimonial-text">
+                  The creative atmosphere at ITC Beauty Parlor Training Center
+                  fueled my passion for hair styling. The innovative techniques
+                  and exposure to industry trends opened doors to exciting
+                  opportunities. Couldn't have asked for a better place to learn
+                  and grow.
+                </p>
+                <div class="testimonial-user">
+                  <img
+                    src="https://itcbeautytraining.com/wp-content/uploads/2024/02/Manisha-Sapkota--e1707386957303.jpeg"
+                    class="testimonial-avatar"
+                  />
+                  <div>
+                    <h6 class="testimonial-name">Manisha Sapkota</h6>
+                    <span class="testimonial-role"
+                      >Hair Styling Enthusiast</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <p class="testimonial-text">
+                  The creative atmosphere at ITC Beauty Parlor Training Center
+                  fueled my passion for hair styling. The innovative techniques
+                  and exposure to industry trends opened doors to exciting
+                  opportunities. Couldn't have asked for a better place to learn
+                  and grow.
+                </p>
+                <div class="testimonial-user">
+                  <img
+                    src="https://itcbeautytraining.com/wp-content/uploads/2024/02/Manisha-Sapkota--e1707386957303.jpeg"
+                    class="testimonial-avatar"
+                  />
+                  <div>
+                    <h6 class="testimonial-name">Manisha Sapkota</h6>
+                    <span class="testimonial-role"
+                      >Hair Styling Enthusiast</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <p class="testimonial-text">
+                  The creative atmosphere at ITC Beauty Parlor Training Center
+                  fueled my passion for hair styling. The innovative techniques
+                  and exposure to industry trends opened doors to exciting
+                  opportunities. Couldn't have asked for a better place to learn
+                  and grow.
+                </p>
+                <div class="testimonial-user">
+                  <img
+                    src="https://itcbeautytraining.com/wp-content/uploads/2024/02/Manisha-Sapkota--e1707386957303.jpeg"
+                    class="testimonial-avatar"
+                  />
+                  <div>
+                    <h6 class="testimonial-name">Manisha Sapkota</h6>
+                    <span class="testimonial-role"
+                      >Hair Styling Enthusiast</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+
+    <section class="cta">
+      <div class="container text-center">
+        <h2>Join Free Demo Class Now</h2>
+
+        <a class="btn btn-light btn-lg"> Contact Now </a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row g-5">
+          <!-- ABOUT -->
+
+          <div class="col-lg-4 col-md-6">
+            <h4 class="footer-title">ITC Beauty Training</h4>
+
+            <p class="footer-text">
+              Professional beauty training institute providing practical
+              learning, modern classrooms and expert instructors to help
+              students build successful careers in the beauty industry.
+            </p>
+          </div>
+
+          <!-- CONTACT -->
+
+          <div class="col-lg-4 col-md-6">
+            <h4 class="footer-title">Contact</h4>
+
+            <ul class="footer-info">
+              <li>
+                <i class="fa-solid fa-phone"></i>
+                01-4513958 / 9841438687
+              </li>
+
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                Itcbeautytraining@gmail.com
+              </li>
+
+              <li>
+                <i class="fa-solid fa-location-dot"></i>
+                Dillibazar, Kathmandu
+              </li>
+            </ul>
+          </div>
+
+          <!-- TIMING -->
+
+          <div class="col-lg-4 col-md-6">
+            <h4 class="footer-title">Timing</h4>
+
+            <ul class="footer-info">
+              <li>
+                <i class="fa-regular fa-clock"></i>
+                Sun – Fri : 7:00 AM – 6:00 PM
+              </li>
+
+              <li>
+                <i class="fa-solid fa-ban"></i>
+                Saturday : Closed
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- FOOTER BOTTOM -->
+
+        <div class="footer-bottom">
+          <p>
+            © <span id="year"></span> ITC Beauty Training. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- FLOATING CONTACT WIDGET -->
+
+    <div class="contact-widget">
+      <!-- MAIN BUTTON -->
+      <div class="contact-toggle" id="contactToggle">
+        <i class="fa-solid fa-plus"></i>
+      </div>
+
+      <!-- WHATSAPP -->
+      <a
+        href="#"
+        class="contact-item whatsapp"
+        style="background-color: #44195e; text-decoration: none"
+      >
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+
+      <!-- CALL -->
+      <a
+        href="#"
+        class="contact-item call"
+        style="background-color: #44195e; text-decoration: none"
+      >
+        <i class="fa-solid fa-phone"></i>
+      </a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="./js/main.js"></script>
+    <!-- <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const widget = document.querySelector(".contact-widget");
+        const toggle = document.getElementById("contactToggle");
+
+        if (!toggle || !widget) {
+          console.warn("Contact widget / toggle not found");
+          return;
+        }
+
+        toggle.addEventListener("click", (e) => {
+          e.stopPropagation(); // ✅ prevent instant close
+          widget.classList.toggle("active");
+        });
+
+        document.addEventListener("click", (e) => {
+          if (!e.target.closest(".contact-widget")) {
+            widget.classList.remove("active");
+          }
+        });
+      });
+    </script> -->
+  </body>
+</html>

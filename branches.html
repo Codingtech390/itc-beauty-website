@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Our Branches | ITC Beauty Training</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <style>
+      .page-hero {
+        padding: 120px 0 80px;
+        background: linear-gradient(135deg, #44195e, #2c016d);
+        color: white;
+      }
+
+      .branches img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 12px 12px 0 0;
+      }
+
+      .branch-card {
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+        text-align: center;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+        transition: 0.3s;
+      }
+
+      .branch-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+      }
+
+      .branch-card h5 {
+        margin-top: 15px;
+        font-weight: 600;
+      }
+      body.dark-mode .branch-card h5 {
+        font-family: "Poppins", sans-serif;
+        margin-top: 15px;
+        font-weight: 600;
+        color: #c29538;
+      }
+
+      .branch-card p {
+        margin-bottom: 20px;
+        color: #555;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg premium-navbar fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">
+          <img src="./images/LogoITC.png" alt="ITC Beauty" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="./index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About</a>
+            </li>
+
+            <!-- COURSES DROPDOWN -->
+            <li class="nav-item dropdown course-dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                Courses
+              </a>
+
+              <div class="dropdown-menu course-menu">
+                <a class="dropdown-item" href="./courses/facial-beauty.html">
+                  <i class="fa-solid fa-spa"></i>
+                  Facial & Beauty Therapy
+                </a>
+
+                <a class="dropdown-item" href="./courses//hair-styling-bridal-hair.html">
+                  <i class="fa-solid fa-scissors"></i>
+                  Hair Styling & Bridal Hair Artistry
+                </a>
+
+                <a class="dropdown-item" href="./courses/nail-art-design.html">
+                  <i class="fa-solid fa-wand-magic-sparkles"></i>
+                  Nail Art Design & Extension
+                </a>
+
+                <a class="dropdown-item" href="./courses/body-therapy-spa.html">
+                  <i class="fa-solid fa-palette"></i>
+                  Body Therapy & Spa Treatment
+                </a>
+
+                <a class="dropdown-item" href="./courses/professional-makeup.html">
+                  <i class="fa-solid fa-flask"></i>
+                  Professional Makeup & Beauty Artistry
+                </a>
+
+                <a class="dropdown-item" href="./courses/personalized-grooming.html">
+                  <i class="fa-solid fa-hand-sparkles"></i>
+                  Personalized Grooming
+                </a>
+
+                <a class="dropdown-item" href="./courses/beauty-device-technology.html">
+                  <i class="fa-solid fa-eye"></i>
+                  Beauty Devices Technology
+                </a>
+
+                <a
+                  class="dropdown-item"
+                  href="./courses/integrated-courses.html"
+                >
+                  <i class="fa-solid fa-user-doctor"></i>
+                  Integrated Courses
+                </a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./branches.html">Branches</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+            <li class="nav-item ms-lg-3 d-flex align-items-center">
+              <button id="themeToggle" class="theme-icon-btn">
+                <i class="fa-solid fa-moon" id="themeIcon"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+
+    <section class="page-hero">
+      <div class="container text-center">
+        <h1>Our Branches</h1>
+
+        <p>
+          Explore ITC Beauty Training centers across Nepal and find the branch
+          closest to you.
+        </p>
+      </div>
+    </section>
+
+    <!-- BRANCHES -->
+
+    <section class="branches py-5">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Dillibazar -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="branch-card">
+              <img
+                src="https://itcbeautytraining.com/wp-content/uploads/2024/03/5.png"
+              />
+
+              <h5>Dillibazar</h5>
+
+              <p>
+                <i class="fa-solid fa-phone"></i>
+                01-4513958 / 9841438687
+              </p>
+            </div>
+          </div>
+
+          <!-- Gongbu -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="branch-card">
+              <img
+                src="https://itcbeautytraining.com/wp-content/uploads/2024/03/2.png"
+              />
+
+              <h5>Gongbu</h5>
+
+              <p>
+                <i class="fa-solid fa-phone"></i>
+                01-5900606 / 9864258176
+              </p>
+            </div>
+          </div>
+
+          <!-- Maitidevi -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="branch-card">
+              <img
+                src="https://itcbeautytraining.com/wp-content/uploads/2024/04/2-8.jpg"
+              />
+
+              <h5>Maitidevi</h5>
+
+              <p>
+                <i class="fa-solid fa-phone"></i>
+                01-5917180
+              </p>
+            </div>
+          </div>
+
+          <!-- Thamel -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="branch-card">
+              <img
+                src="https://itcbeautytraining.com/wp-content/uploads/2024/03/1.png"
+              />
+
+              <h5>Thamel Pipalbot</h5>
+
+              <p>
+                <i class="fa-solid fa-phone"></i>
+                01-5315628 / 9849046035
+              </p>
+            </div>
+          </div>
+
+          <!-- Koteshwor -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="branch-card">
+              <img
+                src="https://itcbeautytraining.com/wp-content/uploads/2024/03/3.png"
+              />
+
+              <h5>Koteshwor</h5>
+
+              <p>
+                <i class="fa-solid fa-phone"></i>
+                01-4610015 / 9863239013
+              </p>
+            </div>
+          </div>
+
+          <!-- Chabahil -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="branch-card">
+              <img
+                src="https://itcbeautytraining.com/wp-content/uploads/2023/09/service-2-1.jpg"
+              />
+
+              <h5>Chabahil</h5>
+
+              <p>
+                <i class="fa-solid fa-phone"></i>
+                01-4593361 / 9862690764
+              </p>
+            </div>
+          </div>
+
+          <!-- Kalanki -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="branch-card">
+              <img
+                src="https://itcbeautytraining.com/wp-content/uploads/2024/04/1-8.jpg"
+              />
+
+              <h5>Kalanki</h5>
+
+              <p>
+                <i class="fa-solid fa-phone"></i>
+                01-5312304 / 9862690827
+              </p>
+            </div>
+          </div>
+
+          <!-- Lagankhel -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="branch-card">
+              <img
+                src="https://itcbeautytraining.com/wp-content/uploads/2024/04/345345-1-1.jpg"
+              />
+
+              <h5>Lagankhel</h5>
+
+              <p>
+                <i class="fa-solid fa-phone"></i>
+                01-5911340 / 9864258188
+              </p>
+            </div>
+          </div>
+
+          <!-- Chitwan -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="branch-card">
+              <img
+                src="https://itcbeautytraining.com/wp-content/uploads/2023/09/service-2-1.jpg"
+              />
+
+              <h5>Chitwan</h5>
+
+              <p>
+                <i class="fa-solid fa-phone"></i>
+                056-572144 / 9749848144
+              </p>
+            </div>
+          </div>
+
+          <!-- Butwal -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="branch-card">
+              <img
+                src="https://itcbeautytraining.com/wp-content/uploads/2024/03/Branches-1.png"
+              />
+
+              <h5>Butwal</h5>
+
+              <p>
+                <i class="fa-solid fa-phone"></i>
+                071-531469 / 9748703243
+              </p>
+            </div>
+          </div>
+
+          <!-- Dang -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="branch-card">
+              <img
+                src="https://itcbeautytraining.com/wp-content/uploads/2024/04/345345-5.jpg"
+              />
+
+              <h5>Dang</h5>
+
+              <p>
+                <i class="fa-solid fa-phone"></i>
+                082-563611
+              </p>
+            </div>
+          </div>
+
+          <!-- Pokhara -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="branch-card">
+              <img
+                src="https://itcbeautytraining.com/wp-content/uploads/2024/04/12.jpg"
+              />
+
+              <h5>Pokhara</h5>
+
+              <p>
+                <i class="fa-solid fa-phone"></i>
+                061-574981 / 9762868419
+              </p>
+            </div>
+          </div>
+
+          <!-- Baglung -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="branch-card">
+              <img
+                src="https://itcbeautytraining.com/wp-content/uploads/2024/04/13.jpg"
+              />
+
+              <h5>Baglung</h5>
+
+              <p>
+                <i class="fa-solid fa-phone"></i>
+                068-522710
+              </p>
+            </div>
+          </div>
+
+          <!-- Itahari -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="branch-card">
+              <img
+                src="https://itcbeautytraining.com/wp-content/uploads/2024/03/4.png"
+              />
+
+              <h5>Itahari</h5>
+
+              <p>
+                <i class="fa-solid fa-phone"></i>
+                025-590687 / 9749920382
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+
+    <section class="cta">
+      <div class="container text-center">
+        <h2>Start Your Beauty Career Today</h2>
+
+        <a class="btn btn-light btn-lg" href="./contact.html"> Contact Now </a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-4 col-md-6">
+            <h4 class="footer-title">ITC Beauty Training</h4>
+
+            <p class="footer-text">
+              Professional beauty training institute providing practical
+              learning and expert instructors to help students build successful
+              careers.
+            </p>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <h4 class="footer-title">Contact</h4>
+
+            <ul class="footer-info">
+              <li>
+                <i class="fa-solid fa-phone"></i>
+                01-4513958 / 9841438687
+              </li>
+
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                Itcbeautytraining@gmail.com
+              </li>
+
+              <li>
+                <i class="fa-solid fa-location-dot"></i>
+                Dillibazar, Kathmandu
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <h4 class="footer-title">Timing</h4>
+
+            <ul class="footer-info">
+              <li>
+                <i class="fa-regular fa-clock"></i>
+                Sun – Fri : 7:00 AM – 6:00 PM
+              </li>
+
+              <li>
+                <i class="fa-solid fa-ban"></i>
+                Saturday : Closed
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            © <span id="year"></span> ITC Beauty Training. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- FLOATING CONTACT WIDGET -->
+
+    <div class="contact-widget">
+      <!-- MAIN BUTTON -->
+      <div class="contact-toggle" id="contactToggle">
+        <i class="fa-brands fa-phoenix-squadron"></i>
+      </div>
+
+      <!-- WHATSAPP -->
+      <a
+        href="#"
+        class="contact-item whatsapp"
+        style="background-color: #44195e; text-decoration: none"
+      >
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+
+      <!-- CALL -->
+      <a
+        href="#"
+        class="contact-item call"
+        style="background-color: #44195e; text-decoration: none"
+      >
+        <i class="fa-solid fa-phone"></i>
+      </a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+        <script>
+      // Put this at the very end — either in external file or <script> after widget HTML
+      document.addEventListener("DOMContentLoaded", () => {
+        const widget = document.querySelector(".contact-widget");
+        const toggle = document.getElementById("contactToggle");
+
+        if (!toggle || !widget) {
+          console.warn("Contact widget / toggle not found");
+          return;
+        }
+
+        toggle.addEventListener("click", () => {
+          widget.classList.toggle("active");
+        });
+
+        // Optional: close when clicking outside
+        document.addEventListener("click", (e) => {
+          if (!widget.contains(e.target)) {
+            widget.classList.remove("active");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

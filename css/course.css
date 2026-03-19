@@ -1,0 +1,269 @@
+/* =========================
+   ROOT + THEME VARIABLES
+========================= */
+:root {
+  --primary: #1a1463;
+  --secondary: #3a3153;
+  --gold: #d4af37;
+
+  --text-dark: #222;
+  --text-light: #666;
+
+  --bg-light: #ffffff;
+  --bg-soft: #f8f7ff;
+}
+
+/* DARK MODE */
+body.dark-mode {
+  --text-dark: #f5f5f5;
+  --text-light: #bbb;
+
+  --bg-light: #0f0f14;
+  --bg-soft: #181824;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+.course-hero {
+  padding: 100px 0;
+  background: linear-gradient(135deg, var(--bg-soft), var(--bg-light));
+  transition: all 0.4s ease;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.course-hero .row {
+  width: 100%;
+  min-height: 80vh;
+}
+
+body.dark-mode .course-hero {
+  background: linear-gradient(135deg, #0f0f14, #181824);
+}
+
+.course-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.course-hero h1 span {
+  color: var(--gold);
+}
+
+.hero-subtext {
+  font-size: 1.05rem;
+  color: var(--text-light);
+  margin: 20px 0;
+  line-height: 1.7;
+}
+
+/* HIGHLIGHTS */
+.course-highlights {
+  list-style: none;
+  padding: 0;
+}
+
+.course-highlights li {
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+/* IMAGE */
+.course-hero-img {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+  transition: transform 0.5s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.course-hero-img:hover {
+  transform: scale(1.05);
+}
+
+/* =========================
+   SECTION TITLE
+========================= */
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 20px;
+}
+
+.section-title span {
+  color: var(--gold);
+}
+
+/* =========================
+   COURSE DETAILS
+========================= */
+.course-details {
+  background: var(--bg-light);
+}
+
+.course-description {
+  color: var(--text-light);
+  line-height: 1.8;
+}
+
+.course-list {
+  list-style: none;
+  padding: 0;
+}
+
+.course-list li {
+  margin-bottom: 10px;
+  color: var(--text-dark);
+}
+
+/* CARD */
+.course-card-box {
+  background: var(--bg-light);
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+body.dark-mode .course-card-box {
+  background: #181824;
+}
+
+.course-card-box:hover {
+  transform: translateY(-6px);
+}
+
+/* =========================
+   EXPLORE COURSES
+========================= */
+.explore-courses {
+  padding: 90px 0;
+  background: var(--bg-soft);
+}
+
+.explore-subtext {
+  color: var(--text-light);
+  max-width: 600px;
+  margin: auto;
+}
+
+/* COURSE CARD */
+.course-card {
+  background: var(--bg-light);
+  border-radius: 18px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  height: 100%;
+}
+
+body.dark-mode .course-card {
+  background: #181824;
+}
+
+.course-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.course-card-content {
+  padding: 22px;
+}
+
+.course-card-content h5 {
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.course-card-content p {
+  color: var(--text-light);
+  font-size: 0.95rem;
+}
+
+/* HOVER */
+.course-card:hover {
+  transform: translateY(-12px);
+}
+
+.course-card:hover img {
+  transform: scale(1.1);
+}
+
+/* =========================
+   CTA
+========================= */
+.cta {
+  padding: 100px 0;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: #fff;
+}
+
+.cta h2 {
+  font-weight: 700;
+}
+
+.cta-subtext {
+  color: #ddd;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.btn-primary {
+  background: var(--primary);
+  border: none;
+}
+
+.btn-primary:hover {
+  background: var(--gold);
+  color: #000;
+}
+
+.btn-outline-dark {
+  border-radius: 30px;
+  padding: 8px 18px;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-dark:hover {
+  background: var(--gold);
+  color: #000;
+  border-color: var(--gold);
+}
+
+/* =========================
+   ANIMATION BASE
+========================= */
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .course-hero {
+    padding: 70px 0;
+  }
+
+  .course-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .section-title {
+    font-size: 1.7rem;
+  }
+}
