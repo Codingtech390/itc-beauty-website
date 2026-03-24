@@ -171,11 +171,10 @@
 
             <div class="col-lg-5">
               <div class="form-card">
-                <h4>Register For Free</h4>
+                <h4>Talk To Us</h4>
 
                 <form>
-                  <input class="form-control mb-2" placeholder="First Name" />
-                  <input class="form-control mb-2" placeholder="Last Name" />
+                  <input class="form-control mb-2" placeholder="Full Name" />
                   <input
                     class="form-control mb-2"
                     placeholder="Mobile Number"
@@ -195,6 +194,7 @@
                     <option>Mehendi Specialization</option>
                     <option>Master Makeup</option>
                   </select>
+                  <input class="form-control mb-2" placeholder="Message" />
 
                   <button class="btn btn-primary w-100">Submit Form</button>
                 </form>
@@ -1036,6 +1036,32 @@
       >
         <i class="fa-solid fa-phone"></i>
       </a>
+
+      <!-- CHATBOT -->
+      <a
+        class="contact-item chatbot"
+        id="chatbotBtn"
+        style="background-color: #44195e; cursor: pointer"
+      >
+        <i class="fa-solid fa-comments"></i>
+      </a>
+    </div>
+
+    <!-- CHATBOT PANEL -->
+    <div class="chatbot-box" id="chatbotBox">
+      <div class="chat-header">
+        <span>Chat Support</span>
+        <i class="fa-solid fa-xmark" id="closeChat"></i>
+      </div>
+
+      <div class="chat-body" id="chatBody">
+        <div class="bot-message">Hi 👋 How can I help you?</div>
+      </div>
+
+      <div class="chat-input">
+        <input type="text" id="chatInput" placeholder="Type your message..." />
+        <button id="sendBtn">Send</button>
+      </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -1043,27 +1069,67 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="./js/main.js"></script>
-    <!-- <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const widget = document.querySelector(".contact-widget");
-        const toggle = document.getElementById("contactToggle");
+    <script>
+      const chatbotBtn = document.getElementById("chatbotBtn");
+      const chatbotBox = document.getElementById("chatbotBox");
+      const closeChat = document.getElementById("closeChat");
+      const sendBtn = document.getElementById("sendBtn");
+      const chatInput = document.getElementById("chatInput");
+      const chatBody = document.getElementById("chatBody");
 
-        if (!toggle || !widget) {
-          console.warn("Contact widget / toggle not found");
-          return;
-        }
-
-        toggle.addEventListener("click", (e) => {
-          e.stopPropagation(); // ✅ prevent instant close
-          widget.classList.toggle("active");
-        });
-
-        document.addEventListener("click", (e) => {
-          if (!e.target.closest(".contact-widget")) {
-            widget.classList.remove("active");
-          }
-        });
+      // Open chatbot
+      chatbotBtn.addEventListener("click", () => {
+        chatbotBox.style.display = "flex";
       });
-    </script> -->
+
+      // Close chatbot
+      closeChat.addEventListener("click", () => {
+        chatbotBox.style.display = "none";
+      });
+
+      // Send message
+      sendBtn.addEventListener("click", sendMessage);
+      chatInput.addEventListener("keypress", (e) => {
+        if (e.key === "Enter") sendMessage();
+      });
+
+      function sendMessage() {
+        const message = chatInput.value.trim();
+        if (!message) return;
+
+        // User message
+        const userMsg = document.createElement("div");
+        userMsg.className = "user-message";
+        userMsg.innerText = message;
+        chatBody.appendChild(userMsg);
+
+        chatInput.value = "";
+
+        // Bot reply (basic logic)
+        setTimeout(() => {
+          const botMsg = document.createElement("div");
+          botMsg.className = "bot-message";
+
+          botMsg.innerText = getBotReply(message);
+          chatBody.appendChild(botMsg);
+
+          chatBody.scrollTop = chatBody.scrollHeight;
+        }, 500);
+      }
+
+      // Simple chatbot logic
+      function getBotReply(msg) {
+        msg = msg.toLowerCase();
+
+        if (msg.includes("course"))
+          return "We offer Web Development & AI courses.";
+        if (msg.includes("fee"))
+          return "Fees start from ₹15,000 depending on course.";
+        if (msg.includes("contact"))
+          return "You can call or WhatsApp us using the buttons.";
+
+        return "Please share more details so I can help you better 🙂";
+      }
+    </script>
   </body>
 </html>
