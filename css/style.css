@@ -74,7 +74,7 @@ body.dark-mode .theme-icon-btn:hover {
 
 .premium-navbar {
   background: #ffffff;
-  padding: 14px 0;
+  padding: 10px 0;
   transition: all 0.3s ease;
   box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
 }
@@ -82,7 +82,8 @@ body.dark-mode .theme-icon-btn:hover {
 /* LOGO */
 
 .navbar-brand img {
-  max-width: 75px;
+  height: 75px;
+  width: auto;
 }
 
 /* NAV LINKS */
@@ -104,20 +105,9 @@ body.dark-mode .theme-icon-btn:hover {
 }
 
 /* GOLD UNDERLINE */
-
-.navbar-nav .nav-link::after {
-  content: "";
-  position: absolute;
-  bottom: -6px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: #44195e;
-  transition: width 0.25s ease;
-}
-
-.navbar-nav .nav-link:hover::after {
-  width: 100%;
+/* REMOVE DROPDOWN ARROW */
+.navbar .dropdown-toggle::after {
+  display: none !important;
 }
 
 /* ===============================
@@ -302,85 +292,119 @@ body.dark-mode .hero-points li::before {
   content: "✔";
   color: #c29538;
   font-weight: bold;
-}
-/* ==================================
-   FORM CARD
-==================================*/
+}/* ===============================
+   PREMIUM FORM CARD
+================================ */
 
 .form-card {
   background: #ffffff;
-  padding: 35px;
-  border-radius: 14px;
-  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.35);
+  padding: 32px;
+  border-radius: 18px;
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.12);
   color: #121111;
   max-width: 420px;
   margin-left: auto;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0,0,0,0.04);
 }
+
+/* DARK MODE */
 
 body.dark-mode .form-card {
-  background: #ffffff !important;
-  padding: 35px;
-  border-radius: 14px;
-  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.35);
-  color: #121111;
-  max-width: 420px;
-  margin-left: auto;
+  background: rgba(20, 20, 25, 0.85);
+  color: #ffffff;
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.6);
 }
 
-/* FORM TITLE */
+/* TITLE */
 
 .form-card h4 {
   font-family: "Playfair Display", serif;
-  font-size: 22px;
-  margin-bottom: 20px;
+  font-size: 24px;
+  margin-bottom: 22px;
+  font-weight: 600;
 }
 
-body.dark-mode .form-card h4 {
-  font-family: "Playfair Display", serif;
-  font-size: 22px;
-  margin-bottom: 20px;
-  color: #0f0f0f;
+/* FORM GROUP */
+
+.premium-form .form-group {
+  margin-bottom: 14px;
 }
 
 /* INPUTS */
 
 .form-card .form-control {
-  border-radius: 8px;
-  padding: 12px 14px;
-  border: 1px solid #e6e6e6;
+  border-radius: 12px;
+  padding: 13px 14px;
+  border: 1px solid #e8e8e8;
   font-size: 14px;
+  background: #fafafa;
+  transition: all 0.25s ease;
 }
+
+/* INPUT FOCUS */
 
 .form-card .form-control:focus {
   border-color: #44195e;
-  box-shadow: 0 0 0 2px rgba(194, 149, 56, 0.15);
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(68, 25, 94, 0.12);
+}
+
+/* DARK MODE INPUT */
+
+body.dark-mode .form-control {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: #fff;
+}
+
+body.dark-mode .form-control::placeholder {
+  color: rgba(255,255,255,0.6);
+}
+
+body.dark-mode .form-control:focus {
+  background: rgba(255,255,255,0.08);
+  border-color: #c29538;
+  box-shadow: 0 0 0 3px rgba(194, 149, 56, 0.2);
+}
+
+/* SELECT FIX */
+
+.form-card select.form-control {
+  appearance: none;
+  cursor: pointer;
 }
 
 /* BUTTON */
 
-.form-card .btn {
-  background: #44195e;
+.submit-btn {
+  background: linear-gradient(135deg, #44195e, #6a2c91);
   border: none;
-  padding: 12px;
+  padding: 13px;
   font-weight: 500;
-  border-radius: 8px;
-  transition: 0.3s;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  color: #fff;
 }
 
-body.dark-mode .form-card .btn {
-  background: #c29538 !important;
-  padding: 12px;
-  font-weight: 500;
-  border-radius: 8px;
-  transition: 0.3s;
-}
+/* BUTTON HOVER */
 
-.form-card .btn:hover {
-  background: #a97d2c;
+.submit-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 12px 25px rgba(68, 25, 94, 0.3);
 }
 
+/* DARK BUTTON */
+
+body.dark-mode .submit-btn {
+  background: linear-gradient(135deg, #c29538, #e0b24d);
+  color: #121111;
+}
+
+body.dark-mode .submit-btn:hover {
+  box-shadow: 0 12px 25px rgba(194, 149, 56, 0.4);
+}
 /* ==================================
    MOBILE HERO
 ==================================*/
@@ -472,7 +496,7 @@ body.dark-mode .form-card .btn {
 .gallery-overlay i {
   color: white;
   font-size: 22px;
-  background: rgba(255,255,255,0.2);
+  background: rgba(255, 255, 255, 0.2);
   padding: 12px;
   border-radius: 50%;
 }
@@ -483,7 +507,9 @@ body.dark-mode .form-card .btn {
 
 /* ACTIVE SLIDE EFFECT */
 .swiper-slide {
-  transition: transform 0.4s ease, opacity 0.4s ease;
+  transition:
+    transform 0.4s ease,
+    opacity 0.4s ease;
   opacity: 0.6;
   transform: scale(0.9);
 }
@@ -503,7 +529,6 @@ body.dark-mode .form-card .btn {
 .swiper-pagination-bullet-active {
   background: #44195e;
 }
-
 
 /* ==================================
    TESTIMONIALS
@@ -1580,7 +1605,7 @@ FLOATING CONTACT CARDS
 
 .contact-card i {
   font-size: 30px;
-  color: #d4af37;
+  color: #44195e;
   margin-bottom: 16px;
 }
 
@@ -1613,90 +1638,168 @@ CONTACT MAIN SECTION
   padding: 110px 0;
   font-family: "Poppins", sans-serif;
 }
-
-/* FORM CARD */
+/* ================================
+   CONTACT FORM (PREMIUM UI)
+================================ */
 
 .contact-form {
-  background: #fff;
+  background: #ffffff;
   padding: 45px;
-  border-radius: 18px;
-  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+
+  /* glass + depth */
+  box-shadow: 
+    0 25px 60px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255,255,255,0.6);
+
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
 }
 
-/* ======================================
-ANIMATED FORM FIELDS
-====================================== */
+/* DARK MODE */
+
+body.dark-mode .contact-form {
+  background: rgba(20, 20, 25, 0.85);
+  color: #f1f1f1;
+
+  box-shadow: 
+    0 25px 60px rgba(0, 0, 0, 0.6),
+    inset 0 1px 0 rgba(255,255,255,0.05);
+}
+
+/* TITLE */
+
+.contact-form h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.contact-form p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+body.dark-mode .contact-form p {
+  color: #aaa;
+}
+
+/* ================================
+   FORM FIELDS
+================================ */
 
 .form-group {
   position: relative;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 }
+
+/* INPUT */
 
 .form-group input,
 .form-group textarea {
   width: 100%;
-  padding: 15px 14px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  outline: none;
-  font-size: 15px;
+  padding: 14px 14px;
+  border-radius: 10px;
+  border: 1px solid #e5e5e5;
+  font-size: 14px;
+
+  background: #fafafa;
   transition: all 0.25s ease;
-  background: #fff;
 }
 
-.form-group textarea {
-  min-height: 120px;
-  resize: none;
+/* DARK INPUT */
+
+body.dark-mode .form-group input,
+body.dark-mode .form-group textarea {
+  background: #1f1f25;
+  border: 1px solid #333;
+  color: #fff;
 }
 
-/* focus glow */
+/* FOCUS EFFECT */
 
 .form-group input:focus,
 .form-group textarea:focus {
-  border-color: #d4af37;
-  box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.15);
+  border-color: #44195e;
+  box-shadow: 0 0 0 2px rgba(68, 25, 94, 0.15);
+  background: #fff;
 }
 
-/* floating label */
+body.dark-mode .form-group input:focus,
+body.dark-mode .form-group textarea:focus {
+  background: #1f1f25;
+  border-color: #c29538;
+  box-shadow: 0 0 0 2px rgba(194, 149, 56, 0.2);
+}
+
+/* ================================
+   FLOATING LABEL
+================================ */
 
 .form-group label {
   position: absolute;
   left: 14px;
   top: 14px;
-  font-size: 14px;
+  font-size: 13px;
   color: #777;
-  background: #fff;
+  background: transparent;
   padding: 0 6px;
-  transition: 0.25s;
+  transition: all 0.25s ease;
   pointer-events: none;
 }
+
+/* ACTIVE STATE */
 
 .form-group input:focus + label,
 .form-group input:not(:placeholder-shown) + label,
 .form-group textarea:focus + label,
 .form-group textarea:not(:placeholder-shown) + label {
-  top: -9px;
-  font-size: 12px;
-  color: #d4af37;
+  top: -8px;
+  font-size: 11px;
+  color: #44195e;
+  background: #fff;
 }
 
-/* ======================================
-SUBMIT BUTTON
-====================================== */
+/* DARK LABEL FIX */
+
+body.dark-mode .form-group input:focus + label,
+body.dark-mode .form-group input:not(:placeholder-shown) + label,
+body.dark-mode .form-group textarea:focus + label,
+body.dark-mode .form-group textarea:not(:placeholder-shown) + label {
+  background: #141419;
+  color: #c29538;
+}
+
+/* ================================
+   BUTTON (PREMIUM CTA)
+================================ */
 
 .contact-form button {
-  background: linear-gradient(135deg, #d4af37, #b8962e);
+  background: linear-gradient(135deg, #44195e, #6a2c91);
   border: none;
-  padding: 14px 30px;
-  color: #fff;
+  padding: 14px;
   font-weight: 500;
-  border-radius: 8px;
+  border-radius: 10px;
   transition: all 0.3s ease;
+  letter-spacing: 0.5px;
 }
+
+/* DARK BUTTON */
+
+body.dark-mode .contact-form button {
+  background: linear-gradient(135deg, #c29538, #a97d2c);
+}
+
+/* HOVER */
 
 .contact-form button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 12px 30px rgba(212, 175, 55, 0.35);
+  box-shadow: 0 12px 30px rgba(68, 25, 94, 0.35);
+}
+
+body.dark-mode .contact-form button:hover {
+  box-shadow: 0 12px 30px rgba(194, 149, 56, 0.35);
 }
 
 /* ======================================
@@ -2744,7 +2847,7 @@ RESPONSIVE
 .contact-widget.active .contact-item {
   opacity: 1;
   pointer-events: auto;
-  transform: scale(1);  
+  transform: scale(1);
 }
 
 /* ROTATE MAIN ICON */
@@ -2849,69 +2952,243 @@ RESPONSIVE
   margin-bottom: 10px;
 }
 
-
-/* CHATBOT */
+/* =========================
+   CHATBOT PANEL (PREMIUM)
+========================= */
 .chatbot-box {
   position: fixed;
-  bottom: 90px;
-  right: 20px;
-  width: 300px;
-  height: 380px;
-  background: #fff;
-  border-radius: 12px;
+  bottom: 110px;
+  left: 30px;
+  width: 340px;
+  height: 460px;
+  background: #ffffff;
   display: none;
   flex-direction: column;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  border-radius: 18px;
   overflow: hidden;
-  z-index: 999;
+  z-index: 9999;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+
+  opacity: 0;
+  transform: translateY(20px) scale(0.95);
+  transition: all 0.3s ease;
 }
 
-.chat-header {
-  background: #44195e;
+.chatbot-box.show {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* =========================
+   CHATBOT FLOAT BUTTON
+========================= */
+
+.chatbot-toggle {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  width: 65px;
+  height: 65px;
+  background: linear-gradient(135deg, #44195e, #6a2c91);
   color: #fff;
-  padding: 12px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 9999;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+}
+
+.chatbot-toggle:hover {
+  transform: scale(1.1);
+}
+
+.chatbot-toggle::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgba(106, 44, 145, 0.3);
+  animation: pulse 2s infinite;
+  z-index: -1;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  70% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+/* HEADER */
+
+.chat-header {
+  background: linear-gradient(135deg, #44195e, #6a2c91);
+  color: #fff;
+  padding: 14px 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.chat-body {
-  flex: 1;
-  padding: 10px;
-  overflow-y: auto;
+.chat-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.chat-avatar {
+  width: 38px;
+  height: 38px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.chat-user h4 {
+  margin: 0;
   font-size: 14px;
 }
 
-.bot-message {
-  background: #f1f1f1;
-  padding: 8px;
-  border-radius: 8px;
-  margin-bottom: 8px;
+.chat-user span {
+  font-size: 11px;
+  opacity: 0.8;
 }
 
-.user-message {
-  background: #44195e;
-  color: #fff;
-  padding: 8px;
-  border-radius: 8px;
-  margin-bottom: 8px;
-  text-align: right;
+.chat-header i {
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.2s;
 }
+
+.chat-header i:hover {
+  transform: scale(1.2);
+}
+
+/* BODY */
+
+.chat-body {
+  flex: 1;
+  padding: 14px;
+  overflow-y: auto;
+  background: #f9f9fb;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* MESSAGES */
+
+.bot-message,
+.user-message {
+  max-width: 75%;
+  padding: 10px 14px;
+  border-radius: 14px;
+  font-size: 13px;
+  line-height: 1.4;
+  animation: fadeIn 0.2s ease;
+}
+
+/* BOT */
+
+.bot-message {
+  background: #ffffff;
+  border: 1px solid #eee;
+  align-self: flex-start;
+}
+
+/* USER */
+
+.user-message {
+  background: linear-gradient(135deg, #44195e, #6a2c91);
+  color: #fff;
+  align-self: flex-end;
+  border-bottom-right-radius: 4px;
+}
+
+/* INPUT AREA */
 
 .chat-input {
   display: flex;
-  border-top: 1px solid #ddd;
+  align-items: center;
+  padding: 10px;
+  background: #fff;
+  border-top: 1px solid #eee;
 }
 
 .chat-input input {
   flex: 1;
   border: none;
-  padding: 10px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: #f1f1f5;
+  font-size: 13px;
+  outline: none;
 }
 
 .chat-input button {
+  margin-left: 8px;
   background: #44195e;
   color: #fff;
   border: none;
-  padding: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.chat-input button:hover {
+  transform: scale(1.1);
+}
+
+/* SCROLLBAR (nice touch) */
+
+.chat-body::-webkit-scrollbar {
+  width: 5px;
+}
+
+.chat-body::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+/* ANIMATIONS */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
